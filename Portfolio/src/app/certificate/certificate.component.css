@@ -1,0 +1,49 @@
+.certify-item {
+    position: relative;
+    display: flex;
+}
+
+.certify-item .content {
+    position: absolute;
+    background: rgba(19, 19, 19, 0.5);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* min-width: 100%; */
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.certify-item .content .description {
+    margin: auto auto;
+    width: 80%;
+}
+
+.certify-item .content:hover {
+    opacity: 1;
+}
+
+.certify-item .type {
+    letter-spacing: 2px;
+    font-size: 1.1em;
+}
+
+.certify-item .description {
+    font-size: 1.2em;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+.certify-item img {
+    margin: auto auto;
+    max-width: 100%;
+}
+
+.certify-item .demo {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.row {
+    margin-bottom: 57px;
+}

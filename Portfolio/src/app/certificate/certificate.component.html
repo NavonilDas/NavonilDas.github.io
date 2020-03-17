@@ -1,4 +1,10 @@
-<p>
-  certificate works!
-</p>
-ddsjfkjsdfkjjj
+<div style="overflow: hidden;">
+  <div class="row" *ngFor="let cer of certificates">
+    <div class="col-md-4 certify-item" *ngFor="let item of cer">
+      <div class="content">
+        <p class="description">{{item.info}}</p>
+      </div>
+      <img class='demo' [lazyLoad]="item.img" [defaultImage]="item.def">
+    </div>
+  </div>
+</div>
