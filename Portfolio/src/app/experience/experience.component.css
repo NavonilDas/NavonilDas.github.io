@@ -1,0 +1,30 @@
+.exp-box{
+    background: #212121;
+    border: 1px solid lightgray;
+    padding: 35px;
+    margin-bottom: 50px;
+}
+.exp-box > div {
+    margin-bottom: 20px;
+}
+.exp-box .title{
+    text-align: center;
+    font-size:1.5em;
+}
+.exp-box .title a{
+    color:#fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+.exp-box .position{
+    text-align: center;
+}
+
+.exp-box .location{
+    display: flex;
+    justify-content: space-between;
+}
+
+.exp-box .description{
+    max-width: 500px;
+}

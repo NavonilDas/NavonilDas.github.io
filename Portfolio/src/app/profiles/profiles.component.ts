@@ -12,4 +12,7 @@ export class ProfilesComponent implements OnInit {
   ngOnInit() {
   }
 
+  link(u) {
+    window.open(u, '_blank');
+  }
 }

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent implements OnInit {
-  skills = ['C/C++','Python','Javascript','Arduino','AVR','IOT','JAVA','Android','Angular','electron','Django','C#']
+  skills = ['C/C++','Python','Javascript','Arduino','AVR','IOT','JAVA','Android','Angular','electron','Django','C#','Web Devlopment','Linux']
   constructor() { }
 
   ngOnInit() {

@@ -1,15 +1,18 @@
 <header>
-  <div>Navonil Das</div>
+  <div class="title">NAVONIL DAS</div>
   <div>
     <ul>
-      <li><a routerLink="/">Experience</a></li>
-      <li><a routerLink="/projects">Projects</a></li>
-      <li><a routerLink="/skills">Skills</a></li>
-      <li><a routerLink="/education">Education</a></li>
-      <li><a routerLink="/certificates">Certificates</a></li>
-      <li><a routerLink="/profiles">Profiles</a></li>
+      <li [className]="active == 0?'active':''"><a routerLink="/">EXPERIENCE</a></li>
+      <li [className]="active == 1?'active':''"><a routerLink="/projects">PROJECTS</a></li>
+      <!-- <li [className]="active == 2?'active':''"><a routerLink="/skills">SKILLS</a></li> -->
+      <!-- <li [className]="active == 3?'active':''"><a routerLink="/education">EDUCATION</a></li> -->
+      <li [className]="active == 4?'active':''"><a routerLink="/certificates">CERTIFICATES</a></li>
+      <li [className]="active == 5?'active':''"><a routerLink="/profiles">PROFILES</a></li>
+      <li><a href="">RESUME</a></li>
     </ul>
   </div>
 </header>
 
-<router-outlet></router-outlet>
+<div style="padding: 20px;">
+  <router-outlet></router-outlet>
+</div>

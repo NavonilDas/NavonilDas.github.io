@@ -1,3 +1,12 @@
-<p>
-  projects works!
-</p>
+<div>
+  <div class="row" *ngFor="let pro of projects" (click)="open(item.url)" >
+    <div class="col-md-6 project-item" *ngFor="let item of pro">
+      <div class="content">
+        <h3 class="title">{{item.name}}</h3>
+        <p class="type">{{item.type}}</p>
+        <p class="description">{{item.info}}</p>
+      </div>
+      <img class='demo' [lazyLoad]="item.img" [defaultImage]="item.def">
+    </div>
+  </div>
+</div>
