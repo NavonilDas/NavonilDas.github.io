@@ -6,4 +6,4 @@ rm -f ../*.html
 rm -f ../*.ico
 rm -f ../*.txt
 rm -r -f ../assets
-ng build --prod --aot --extract-css && cp -a dist/Portfolio/. ../
+ng build --prod --aot --extract-css --base-href https://navonildas.github.io/ && cp -a dist/Portfolio/. ../
