@@ -1,12 +1,12 @@
 header {
     padding: 25px;
     display: flex;
-    margin:0;
+    margin: 0;
     justify-content: space-between;
     background: #202020;
 }
 
-header .title{
+header .title {
     font-size: 2.5em;
     float: right;
 }
@@ -21,19 +21,39 @@ header ul li {
     margin-right: 15px;
 }
 
-header ul li a{
+header ul li a {
     text-decoration: none;
-    color:#fff;
+    color: #fff;
 }
 
-header ul li.active{
+header ul li.active {
     padding-bottom: 10px;
     font-weight: bold;
     border-bottom: 2px solid #949292;
 }
 
-header ul li a:hover{
+header ul li a:hover {
     font-weight: bolder;
-
     /* font-size: 1.12em; */
+}
+
+.ham-menu > div {
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.5s;
+}
+.ham-chng .b1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 4px);
+    transform: rotate(-45deg) translate(-6px, 4px);
+}
+
+.ham-chng .b2 {
+    opacity: 0;
+}
+
+.ham-chng .b3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -6px);
+    transform: rotate(45deg) translate(-6px, -6px);
 }

@@ -1,6 +1,7 @@
 .project-item{
     position: relative;
     display: flex;
+    margin-bottom: 57px;
 }
 .project-item .content{
     position: absolute;
@@ -31,8 +32,4 @@
 }
 .project-item .demo{
     background: rgba(255, 255, 255, 0.2);
-}
-
-.row{
-    margin-bottom: 57px;
 }

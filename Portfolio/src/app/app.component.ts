@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
+import { Router, NavigationEnd, RouterOutlet } from '@angular/router';
+import { routerTransition } from './animations';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  animations:[routerTransition]
 })
 export class AppComponent {
   title = 'Portfolio';
@@ -27,5 +29,13 @@ export class AppComponent {
           this.active = 0;
       }
     });
+  }
+
+  openMenu(x : HTMLElement){
+    x.classList.toggle('ham-chng');
+  }
+
+  prepareRoute(outlet: RouterOutlet) {
+    return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
   }
 }

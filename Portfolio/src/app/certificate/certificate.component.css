@@ -1,6 +1,7 @@
 .certify-item {
     position: relative;
     display: flex;
+    margin-bottom: 57px;
 }
 
 .certify-item .content {
@@ -42,8 +43,4 @@
 
 .certify-item .demo {
     background: rgba(255, 255, 255, 0.2);
-}
-
-.row {
-    margin-bottom: 57px;
 }

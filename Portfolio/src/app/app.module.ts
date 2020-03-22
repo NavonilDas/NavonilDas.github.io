@@ -5,7 +5,8 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ExperienceComponent } from './experience/experience.component';
 // import { LazyLoadImageModule, scrollPreset } from 'ng-lazyload-image';
-
+// import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,8 @@ import { ExperienceComponent } from './experience/experience.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

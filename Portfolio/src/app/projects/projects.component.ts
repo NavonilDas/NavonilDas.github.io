@@ -40,7 +40,7 @@ export class ProjectsComponent implements OnInit {
         info: ``,
         url: '',
         def: '../assets/loading.gif',
-        img: ''
+        img: 'https://raw.githubusercontent.com/NavonilDas/StickFigureAnimator/master/Screenshot/ss.gif'
       }
     ],
     [
@@ -67,15 +67,15 @@ export class ProjectsComponent implements OnInit {
         info: ``,
         url: '',
         def: '../assets/loading.gif',
-        img: ''
+        img: '../assets/maze.jpg'
       },
       {
-        name: 'Recommendation System',
+        name: 'Recommend Color',
         type: 'Personal',
         info: ``,
         url: '',
         def: '../assets/loading.gif',
-        img: ''
+        img: 'https://raw.githubusercontent.com/NavonilDas/MachineLearning/master/RecommendationSystem/Result.png'
       }
     ],
     [
