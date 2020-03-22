@@ -21,11 +21,11 @@ header .title {
 .slide-menu ul li {
     display: inline;
     margin-right: 15px;
+    color: #fff;
 }
 
-.slide-menu ul li a {
-    text-decoration: none;
-    color: #fff;
+.slide-menu ul li:focus{
+    outline: 0;
 }
 
 .slide-menu ul li.active {
@@ -34,7 +34,7 @@ header .title {
     border-bottom: 2px solid #949292;
 }
 
-.slide-menu ul li a:hover {
+.slide-menu ul li:hover {
     font-weight: bolder;
 }
 
