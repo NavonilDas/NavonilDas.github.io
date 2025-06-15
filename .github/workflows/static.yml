@@ -38,6 +38,11 @@ jobs:
         with:
           # Upload entire repository
           path: '.'
+      - name: Upload Project Images
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: 'Projects'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
